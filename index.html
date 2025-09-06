@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guía Staff | Xipermine</title>
+  <meta name="description" content="Manual corporativo del staff de Xipermine: políticas, entrenamiento (con Induxer), SOPs, sanciones, seguridad, documentación técnica y mejores prácticas." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <aside class="sidebar" aria-label="Navegación principal">
+    <h2 class="logo">Xipermine</h2>
+    <nav>
+      <a href="#portada">Portada</a>
+      <a href="#filosofia">Filosofía</a>
+      <a href="#politicas">Marco legal y políticas</a>
+      <a href="#comunicacion">Comunicación interna</a>
+      <a href="#roles">Roles y límites</a>
+      <a href="#permisos-escalado">Permisos y escalado</a>
+      <a href="#evidencias">Estándares de evidencias</a>
+      <a href="#sanciones">Matriz de sanciones</a>
+      <a href="#sops">Procedimientos operativos (SOP)</a>
+      <a href="#incidentes">Gestión de incidentes críticos</a>
+      <a href="#seguridad">Seguridad y continuidad</a>
+      <a href="#documentacion">Documentación técnica</a>
+      <a href="#operaciones">Operaciones y mantenimiento</a>
+      <a href="#eventos">Gestión de eventos</a>
+      <a href="#marca">Normas visuales y marca</a>
+      <a href="#plantillas">Plantillas oficiales</a>
+      <a href="#metricas">Métricas y reporting</a>
+      <a href="#calidad">Calidad y auditorías</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#glosario">Glosario</a>
+      <a href="#changelog">Registro de cambios</a>
+      <a href="#creditos">Créditos internos</a>
+    </nav>
+  </aside>
+
+  <main id="contenido" class="content">
+    <header id="portada" class="hero">
+      <h1>Guía Oficial del Staff de Xipermine</h1>
+      <p class="subtitle">
+        Manual corporativo integral para la gestión profesional del servidor. Incluye políticas, formación,
+        procedimientos operativos estándar, sanciones, seguridad, documentación técnica y buenas prácticas.
+      </p>
+
+      <div class="toolbar">
+        <input id="buscador" type="search" placeholder="Buscar en la guía..." aria-label="Buscar en la guía" />
+        <button id="btnLimpiar" class="btn">Limpiar búsqueda</button>
+        <button id="btnImprimir" class="btn btn-outline">Imprimir / PDF</button>
+      </div>
+
+      <p class="disclaimer">
+        Uso interno exclusivo. Prohibida su difusión fuera del equipo sin autorización de la administración de Xipermine.
+      </p>
+    </header>
+
+    <section id="filosofia" class="card">
+      <h2>Filosofía</h2>
+      <p>
+        El staff de Xipermine es el garante de una experiencia segura, justa y sostenible. La filosofía se
+        apoya en respeto, justicia, excelencia operativa y mejora continua.
+      </p>
+      <h3>Misión</h3>
+      <p>Proporcionar una experiencia estable y honesta, con intervención rápida, trazable y basada en evidencia.</p>
+      <h3>Visión</h3>
+      <p>Ser referencia en gestión profesional de comunidades Minecraft, con procesos claros y personal formado.</p>
+      <h3>Valores</h3>
+      <ul>
+        <li>Integridad y neutralidad en cada decisión.</li>
+        <li>Transparencia en registros y comunicación interna.</li>
+        <li>Aprendizaje permanente y estandarización de procesos.</li>
+      </ul>
+    </section>
+
+    <section id="politicas" class="card">
+      <h2>Marco legal y políticas</h2>
+      <h3>Confidencialidad</h3>
+      <ul>
+        <li>La información interna no se comparte fuera del staff.</li>
+        <li>Los registros de sanciones se consideran confidenciales.</li>
+        <li>El acceso a documentos se concede según necesidad operativa.</li>
+      </ul>
+      <h3>Privacidad y protección de datos</h3>
+      <ul>
+        <li>Se evita recopilar datos personales innecesarios.</li>
+        <li>Se borran datos bajo solicitud cuando proceda legalmente.</li>
+      </ul>
+      <h3>Conflicto de intereses</h3>
+      <ul>
+        <li>Cualquier relación con jugadores que pueda afectar la imparcialidad debe declararse.</li>
+        <li>Está prohibido usar el cargo para beneficio personal.</li>
+      </ul>
+      <h3>Uso de herramientas y cuentas</h3>
+      <ul>
+        <li>Prohibido compartir cuentas de staff.</li>
+        <li>Obligatorio activar segundo factor cuando esté disponible.</li>
+      </ul>
+    </section>
+
+    <section id="comunicacion" class="card">
+      <h2>Comunicación interna</h2>
+      <h3>Canales y propósito</h3>
+      <ul>
+        <li>staff-chat: coordinación diaria.</li>
+        <li>sanciones: registro formal de acciones disciplinarias.</li>
+        <li>tickets: seguimiento estructurado de casos.</li>
+        <li>reuniones: agenda, actas y decisiones.</li>
+        <li>staff-logs: automatismos y logs críticos.</li>
+      </ul>
+      <h3>Estilo de comunicación</h3>
+      <ul>
+        <li>Objetivo, breve y con contexto verificable.</li>
+        <li>Evitar discusiones públicas; tratar discrepancias en privado.</li>
+        <li>Siempre añadir usuario, prueba y resultado esperado.</li>
+      </ul>
+      <h3>Anuncios internos</h3>
+      <ol>
+        <li>Borrador y validación por administración.</li>
+        <li>Publicación con fecha, responsable y vigencia.</li>
+        <li>Fijación y archivo en repositorio de normas.</li>
+      </ol>
+    </section>
+
+      <h3>Fases</h3>
+      <ol>
+        <li>Postulación y entrevista.</li>
+        <li>Asignación de mentor y periodo de práctica supervisada (mínimo dos semanas).</li>
+        <li>Evaluación técnica y conductual con rúbrica objetiva.</li>
+        <li>Confirmación de rango o extensión de práctica.</li>
+      </ol>
+
+      <h3>Induxer: enfoque y aportes</h3>
+      <p>
+        Induxer desarrolla cursos orientados a comunidades online: contenidos claros, aplicables y con coste accesible.
+        El paquete base para Xipermine incluye módulos de atención al jugador, comunicación asertiva, gestión de conflictos,
+        uso avanzado de Discord y ética profesional del staff.
+      </p>
+
+      <h4>Módulos sugeridos por Induxer</h4>
+      <ul>
+        <li>Atención al jugador y escucha activa.</li>
+        <li>Resolución de conflictos y mediación.</li>
+        <li>Herramientas del staff: flujos, tickets y registros.</li>
+        <li>Comunicación escrita profesional en Discord.</li>
+        <li>Gestión del tiempo y del estrés en picos de carga.</li>
+      </ul>
+
+      <h3>Rúbrica de evaluación</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Criterio</th><th>Excelente</th><th>Adecuado</th><th>Mejorable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aplicación de SOP</td>
+            <td>Sigue el protocolo sin errores</td>
+            <td>Pequeños desvíos sin impacto</td>
+            <td>Desconoce pasos clave</td>
+          </tr>
+          <tr>
+            <td>Comunicación</td>
+            <td>Clara, neutral y completa</td>
+            <td>Suficiente, con omisiones menores</td>
+            <td>Ambigua o poco profesional</td>
+          </tr>
+          <tr>
+            <td>Evidencias</td>
+            <td>Pruebas organizadas y verificables</td>
+            <td>Pruebas suficientes</td>
+            <td>Pruebas incompletas</td>
+          </tr>
+          <tr>
+            <td>Escalado</td>
+            <td>Escala con criterio y a tiempo</td>
+            <td>Escala, aunque tarde</td>
+            <td>No escala cuando procede</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Certificación interna</h3>
+      <p>
+        Tras superar el itinerario y la evaluación, el miembro obtiene la certificación interna Xipermine
+        y acceso a cursos de especialización de Induxer con condiciones preferentes.
+      </p>
+    </section>
+
+    <section id="roles" class="card">
+      <h2>Roles y límites</h2>
+      <p>Todo miembro debe conocer su ámbito de actuación y sus límites de permiso.</p>
+      <ul class="roles-list">
+        <li><strong>Owner</strong>: dirección estratégica, seguridad, decisiones finales.</li>
+        <li><strong>Administrador</strong>: configuración avanzada, sanciones graves, coordinación.</li>
+        <li><strong>Moderador</strong>: moderación activa, investigación y sanciones intermedias.</li>
+        <li><strong>Helper</strong>: atención al jugador y derivación de casos.</li>
+        <li><strong>Builder</strong>: construcción y mantenimiento visual.</li>
+        <li><strong>Developer</strong>: desarrollo, automatizaciones y rendimiento.</li>
+      </ul>
+      <p>Las acciones críticas requieren registro en staff-logs y, cuando aplique, autorización previa.</p>
+    </section>
+
+    <section id="permisos-escalado" class="card">
+      <h2>Permisos y escalado</h2>
+      <h3>Principios</h3>
+      <ul>
+        <li>Menor poder, menor impacto. Los casos complejos se escalan.</li>
+        <li>Las sanciones permanentes requieren doble validación.</li>
+        <li>Los revertidos de mundo significativos exigen visto bueno de administración.</li>
+      </ul>
+      <h3>Cuándo escalar</h3>
+      <ul>
+        <li>Falta de evidencia suficiente en delitos graves.</li>
+        <li>Conflictos entre staff o contra staff.</li>
+        <li>Caídas, errores críticos, pérdidas de datos o exploits.</li>
+      </ul>
+    </section>
+
+    <section id="evidencias" class="card">
+      <h2>Estándares de evidencias</h2>
+      <p>Registrar y adjuntar pruebas es obligatorio para toda acción disciplinaria o revertido importante.</p>
+      <h3>Tipos de evidencia</h3>
+      <ul>
+        <li>Capturas y vídeo con fecha y contexto visible.</li>
+        <li>Logs de herramientas (CoreProtect, anticheat, consola).</li>
+        <li>Transcripciones de chat con enlace al mensaje original.</li>
+      </ul>
+      <h3>Buenas prácticas</h3>
+      <ul>
+        <li>Nombrar archivos con fecha, usuario y caso.</li>
+        <li>Almacenar en repositorio interno y enlazar en el registro.</li>
+        <li>Evitar ediciones que alteren significado.</li>
+      </ul>
+    </section>
+
+    <section id="sanciones" class="card">
+      <h2>Matriz de sanciones</h2>
+      <p>La tabla define la progresión habitual. Los agravantes pueden elevar el nivel; los atenuantes permiten reducirlo.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Infracción</th><th>Primera</th><th>Segunda</th><th>Tercera</th><th>Cuarta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Insultos leves</td><td>Advertencia</td><td>Mute 30 m</td><td>Mute 2 h</td><td>Mute 1 d</td></tr>
+          <tr><td>Insultos graves / odio</td><td>Mute 2 h</td><td>Mute 1 d</td><td>Ban 7 d</td><td>Ban permanente</td></tr>
+          <tr><td>Spam / flood</td><td>Mute 30 m</td><td>Mute 2 h</td><td>Ban 1 d</td><td>Ban 7 d</td></tr>
+          <tr><td>Publicidad</td><td>Ban 7 d</td><td colspan="3">Ban permanente</td></tr>
+          <tr><td>Hacks PvP</td><td colspan="4">Ban permanente</td></tr>
+          <tr><td>Cheats de movimiento</td><td>Ban 30 d</td><td colspan="3">Ban permanente</td></tr>
+          <tr><td>X-Ray</td><td>Ban 15 d + wipe</td><td colspan="3">Ban permanente</td></tr>
+          <tr><td>Grief</td><td>Rollback + Ban 7 d</td><td>Ban 30 d</td><td colspan="2">Ban permanente</td></tr>
+          <tr><td>Apología de violencia real</td><td colspan="4">Ban permanente</td></tr>
+        </tbody>
+      </table>
+      <p>Las sanciones deben quedar registradas con pruebas y enlace al caso.</p>
+    </section>
+
+    <section id="sops" class="card">
+      <h2>Procedimientos operativos estándar (SOP)</h2>
+
+      <details open>
+        <summary>Atención de tickets</summary>
+        <ol>
+          <li>Clasificar: soporte, bug, reporte, apelación.</li>
+          <li>Responder con saludo, resumen y próximos pasos.</li>
+          <li>Solicitar evidencias si procede.</li>
+          <li>Resolver o escalar según gravedad y permisos.</li>
+          <li>Registrar en staff-logs con ID y acción final.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Detección y sanción por cheats</summary>
+        <ol>
+          <li>Observar sin avisar y grabar evidencia suficiente.</li>
+          <li>Verificar alertas del anticheat y, si es posible, pedir segunda opinión.</li>
+          <li>Aplicar sanción conforme a la matriz y documentar.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Grief y restauración</summary>
+        <ol>
+          <li>Inspeccionar con <code class="cmd">/co inspect</code>.</li>
+          <li>Identificar autor y alcance con <code class="cmd">/co lookup</code>.</li>
+          <li>Restaurar con <code class="cmd">/co rollback</code> y registrar capturas antes/después.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Conflictos en el chat</summary>
+        <ol>
+          <li>Advertir con tono neutral y pedir cese.</li>
+          <li>Silenciar progresivamente si persiste.</li>
+          <li>Escalar a sanción mayor en reincidencia.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Economía y duplicaciones</summary>
+        <ol>
+          <li>Auditar transacciones e inventarios relevantes.</li>
+          <li>Retirar ítems ilícitos y congelar cuentas si aplica.</li>
+          <li>Sancionar según intencionalidad y alcance.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Falsos positivos del anticheat</summary>
+        <ol>
+          <li>Revisar video y contexto de latencia.</li>
+          <li>Verificar patrones anómalos en registros.</li>
+          <li>Corregir sanción si procede y documentar excepción.</li>
+        </ol>
+      </details>
+    </section>
+
+    <section id="incidentes" class="card">
+      <h2>Gestión de incidentes críticos</h2>
+      <h3>Clasificación</h3>
+      <ul>
+        <li>Impacto alto: caída total, pérdida de datos, exploit masivo.</li>
+        <li>Impacto medio: modo de juego caído, bug replicable.</li>
+        <li>Impacto bajo: errores menores, degradación puntual.</li>
+      </ul>
+      <h3>Protocolo</h3>
+      <ol>
+        <li>Notificar a administración y activar canal de incidentes.</li>
+        <li>Contener el problema (whitelist, cerrar cola, desactivar plugin).</li>
+        <li>Comunicar a la comunidad con mensaje breve y sin detalles sensibles.</li>
+        <li>Mitigar, verificar y levantar medidas.</li>
+        <li>Post mortem con causas, impacto y acciones de mejora.</li>
+      </ol>
+    </section>
+
+    <section id="seguridad" class="card">
+      <h2>Seguridad y continuidad</h2>
+      <h3>Accesos</h3>
+      <ul>
+        <li>Contraseñas únicas y segundo factor cuando sea posible.</li>
+        <li>Prohibido compartir credenciales.</li>
+        <li>Revocar accesos en bajas o cambios de rol.</li>
+      </ul>
+      <h3>Backups</h3>
+      <ul>
+        <li>Copias periódicas de mundos, configuraciones y bases de datos.</li>
+        <li>Pruebas de restauración programadas.</li>
+      </ul>
+      <h3>Protecciones</h3>
+      <ul>
+        <li>Mitigación de ataques y listas blancas temporales cuando aplique.</li>
+        <li>Endurecimiento de configuraciones críticas.</li>
+      </ul>
+    </section>
+
+    <section id="documentacion" class="card">
+      <h2>Documentación técnica</h2>
+      <h3>Plugins principales</h3>
+      <ul>
+        <li>EssentialsX: utilidades y moderación básica.</li>
+        <li>LuckPerms: permisos y jerarquías.</li>
+        <li>CoreProtect: auditoría y rollbacks.</li>
+        <li>WorldEdit: herramientas de construcción.</li>
+        <li>Sistema de sanciones: historial y apelaciones.</li>
+        <li>Anticheat: monitorización de patrones anómalos.</li>
+      </ul>
+
+      <h3>Comandos frecuentes</h3>
+      <div class="codegrid">
+        <div class="codeblock">
+          <div class="codehead">
+            <span>EssentialsX</span>
+            <button class="copy">Copiar</button>
+          </div>
+          <pre>/kick <jugador> [razon]
+/ban <jugador> [tiempo] [razon]
+/tempban <jugador> 7d [razon]
+/mute <jugador> [tiempo]
+/unmute <jugador>
+/warn <jugador> [razon]
+/invsee <jugador>
+/tp <de> [a]</pre>
+        </div>
+
+        <div class="codeblock">
+          <div class="codehead">
+            <span>LuckPerms</span>
+            <button class="copy">Copiar</button>
+          </div>
+          <pre>/lp user <jugador> info
+/lp user <jugador> parent add <grupo>
+/lp group list
+/lp editor
+/lp group <g> permission set <permiso> true</pre>
+        </div>
+
+        <div class="codeblock">
+          <div class="codehead">
+            <span>CoreProtect</span>
+            <button class="copy">Copiar</button>
+          </div>
+          <pre>/co inspect
+/co lookup u:<jugador> a:destroy t:1h
+/co rollback u:<jugador> t:1h r:20
+/co restore u:<jugador> t:10m</pre>
+        </div>
+
+        <div class="codeblock">
+          <div class="codehead">
+            <span>WorldEdit</span>
+            <button class="copy">Copiar</button>
+          </div>
+          <pre>//wand
+//pos1
+//pos2
+//set <bloque>
+//replace <a> <b>
+//copy
+//paste
+//undo
+//redo</pre>
+        </div>
+
+        <div class="codeblock">
+          <div class="codehead">
+            <span>Administración</span>
+            <button class="copy">Copiar</button>
+          </div>
+          <pre>/save-all
+/whitelist on
+/stop
+/op <nick>
+/deop <nick></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="operaciones" class="card">
+      <h2>Operaciones y mantenimiento</h2>
+      <h3>Reinicios y avisos</h3>
+      <ol>
+        <li>Aviso con antelación y cuenta atrás en el chat.</li>
+        <li>Guardar estado y verificar procesos críticos.</li>
+        <li>Comprobación tras el reinicio y nota en staff-logs.</li>
+      </ol>
+      <h3>Despliegues y cambios</h3>
+      <ol>
+        <li>Planificar ventana de mantenimiento.</li>
+        <li>Tomar backup previo.</li>
+        <li>Aplicar cambios y validar.</li>
+        <li>Revertir si aparecen errores críticos.</li>
+      </ol>
+    </section>
+
+    <section id="eventos" class="card">
+      <h2>Gestión de eventos</h2>
+      <h3>Planificación</h3>
+      <ol>
+        <li>Definir objetivo, reglas y premios.</li>
+        <li>Asignar responsables de moderación y comunicación.</li>
+        <li>Prueba técnica antes del día del evento.</li>
+      </ol>
+      <h3>Ejecución</h3>
+      <ul>
+        <li>Mensajes claros de inicio, pausas y cierre.</li>
+        <li>Tolerancia cero al uso de trampas.</li>
+      </ul>
+      <h3>Post mortem</h3>
+      <ul>
+        <li>Recoger métricas de asistencia y feedback.</li>
+        <li>Proponer mejoras y cerrar incidencias.</li>
+      </ul>
+    </section>
+
+    <section id="marca" class="card">
+      <h2>Normas visuales y marca</h2>
+      <ul>
+        <li>Skin adecuada y no ofensiva.</li>
+        <li>Prefijos y colores acordes a jerarquía.</li>
+        <li>Lenguaje cuidado en chat público.</li>
+      </ul>
+    </section>
+
+    <section id="plantillas" class="card">
+      <h2>Plantillas oficiales</h2>
+      <details open>
+        <summary>Advertencia en chat</summary>
+        <pre>[Xipermine | Staff] @{jugador}, por favor deja de {conducta}. La siguiente falta conllevará sanción.</pre>
+      </details>
+      <details>
+        <summary>Confirmación de reporte</summary>
+        <pre>[Xipermine | Staff] Gracias por tu reporte, {jugador}. Hemos recibido las pruebas y procederemos a revisarlas.</pre>
+      </details>
+      <details>
+        <summary>Resolución de caso</summary>
+        <pre>[Xipermine | Staff] Tu caso #{id} ha sido resuelto. Acción: {accion}. Responsable: {staff}. Gracias por colaborar.</pre>
+      </details>
+      <details>
+        <summary>Mensaje de sanción</summary>
+        <pre>Has sido sancionado por: {razon}. Duración: {tiempo}. Si crees que hay un error, abre ticket en Discord.</pre>
+      </details>
+    </section>
+
+    <section id="metricas" class="card">
+      <h2>Métricas y reporting</h2>
+      <ul>
+        <li>Tiempo medio de primera respuesta en tickets.</li>
+        <li>Casos resueltos por categoría y por semana.</li>
+        <li>Porcentaje de sanciones revertidas.</li>
+        <li>Incidentes críticos por trimestre.</li>
+      </ul>
+      <p>Los resultados se publican mensualmente y sirven para orientar mejoras formativas y de proceso.</p>
+    </section>
+
+    <section id="calidad" class="card">
+      <h2>Calidad y auditorías</h2>
+      <ul>
+        <li>Revisión de casos aleatorios para verificar correcta aplicación de SOP y evidencias.</li>
+        <li>Retroalimentación individual y planes de mejora.</li>
+        <li>Actualización de la guía cuando se detecten brechas de proceso.</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>Preguntas frecuentes</h2>
+      <details open>
+        <summary>Qué hago si un jugador me insulta</summary>
+        <p>Advertencia, mute progresivo y registro. En reincidencia, escalar según matriz.</p>
+      </details>
+      <details>
+        <summary>Cómo procedo ante un staff que abusa del poder</summary>
+        <p>Recoger evidencias, no discutir en público y elevar a administración.</p>
+      </details>
+      <details>
+        <summary>Qué hago si no estoy seguro de sancionar</summary>
+        <p>Solicitar segunda opinión y reforzar evidencias; evitar decisiones precipitadas.</p>
+      </details>
+    </section>
+
+    <section id="glosario" class="card">
+      <h2>Glosario</h2>
+      <ul>
+        <li>Grief: destrucción intencionada de construcciones.</li>
+        <li>Rollback: restauración del estado previo del mundo.</li>
+        <li>Ban permanente: expulsión sin fecha de finalización.</li>
+        <li>Mute: bloqueo del chat para un jugador.</li>
+        <li>SOP: procedimiento operativo estándar.</li>
+      </ul>
+    </section>
+
+    <section id="changelog" class="card">
+      <h2>Registro de cambios</h2>
+      <ul>
+        <li>2025-09: versión extensa sin iconografía, con Induxer y secciones ampliadas.</li>
+        <li>2025-08: versión profesional inicial con SOPs y matriz de sanciones.</li>
+      </ul>
+    </section>
+
+    <section id="creditos" class="card">
+      <h2>Créditos internos</h2>
+      <p>Coordinación de contenidos: administración de Xipermine. Formación: colaboración con Induxer.</p>
+    </section>
+
+    <footer class="footer">
+      <p>Última actualización: Septiembre 2025</p>
+      <p>Guía interna del Staff — Servidor Xipermine</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
